@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conócenos - IES COYOTL</title>
+  <style>
+    :root {
+      --navy: #002147;
+      --gold: #c4974b;
+      --white: #ffffff;
+      --gray: #f4f4f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom right, #fdfdfd, #e8e8e8);
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      border-bottom: 4px solid var(--gold);
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+
+    .logo-container h1 {
+      font-size: 1.2rem;
+      color: var(--gold);
+      margin: 0;
+    }
+
+    .lobo-img {
+      height: 60px;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .contenedor-cajas {
+      display: grid;
+      gap: 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .contenedor-cajas {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .caja {
+      background: var(--white);
+      border-left: 6px solid var(--navy);
+      border-top: 5px solid var(--gold);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .caja:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .caja h2 {
+      color: var(--navy);
+      font-size: 1.5rem;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .caja h2::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--gold);
+      margin-top: 0.5rem;
+      border-radius: 10px;
+    }
+
+    .caja p {
+      margin: 0;
+      text-align: justify;
+      font-size: 1rem;
+    }
+
+    .volver {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .volver a {
+      background: var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      padding: 0.9rem 2.2rem;
+      border-radius: 10px;
+      font-weight: bold;
+      font-family: 'Segoe UI', sans-serif;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .volver a:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+      margin-top: 5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="logo.jpeg" alt="Logo IES COYOTL">
+      <h1>INSTITUTO DE ESTUDIOS SUPERIORES COYOTL</h1>
+    </div>
+    <img src="lobo.jpeg" alt="Lobo" class="lobo-img">
+  </header>
+
+  <main>
+    <div class="contenedor-cajas">
+
+      <div class="caja">
+        <h2>Misión</h2>
+        <p>IES Coyotl busca formar profesionales en educación superior íntegros, innovadores y con un alto sentido de responsabilidad social, capaces de transformar su entorno a través de la investigación y la aplicación de tecnología de vanguardia, fomentando el pensamiento crítico, la creatividad y el liderazgo para contribuir al desarrollo sostenible de la sociedad.</p>
+      </div>
+
+      <div class="caja">
+        <h2>Visión</h2>
+        <p>Ser la institución superior mayormente reconocida a nivel nacional e internacional por su excelencia académica, su modelo educativo innovador y su impacto en la sociedad. Aspiramos a formar una comunidad de aprendizaje que promueva la investigación, el emprendimiento y la cooperación global para que nuestros egresados cuenten con el conocimiento, habilidades y herramientas necesarias para enfrentar los desafíos del futuro con un enfoque humanista y tecnológico vanguardista.</p>
+      </div>
+
+      <div class="caja">
+        <h2>Objetivo</h2>
+        <p>Cuando nuestro egresado haya culminado nuestro plan de estudios de la Licenciatura en Administración de Empresas será capaz de diseñar estrategias de gestión empresarial a través del manejo de herramientas tecnológicas en entornos organizacionales con la finalidad de contribuir al crecimiento de las empresas en un entorno competitivo.</p>
+      </div>
+
+      <div class="caja">
+        <h2>Ideología</h2>
+        <p>Nuestra ideología se basa en la filosofía institucional de ofrecer una educación superior de calidad mediante un enfoque innovador, multidisciplinario y global. El Instituto de Estudios Superiores Coyotl promueve el desarrollo del pensamiento crítico y la creatividad, fomentando en los estudiantes una visión integral que les permita comprender y transformar su entorno.</p>
+      </div>
+
+      <div class="caja" style="grid-column: span 2;">
+        <h2>Filosofía</h2>
+        <p>El Instituto de Estudios Superiores Coyotl se proyecta como una institución de educación superior vanguardista y prestigiosa, comprometida con la formación integral de sus estudiantes a través de un modelo educativo innovador, multidisciplinario y con un enfoque global. Fundamentamos nuestra enseñanza en los valores de sabiduría, innovación y grandeza, promoviendo el pensamiento crítico, la creatividad y la excelencia académica.</p>
+      </div>
+
+    </div>
+
+    <div class="volver">
+      <a href="index.html">← Volver al inicio</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 INSTITUTO DE ESTUDIOS SUPERIORES COYOTL 
+  </footer>
+
+</body>
+</html>
