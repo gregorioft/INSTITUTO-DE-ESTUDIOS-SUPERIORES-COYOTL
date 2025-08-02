@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IES COYOTL</title>
+  <style>
+    :root {
+      --navy: #002147;
+      --gold: #c4974b;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: #222;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-title img {
+      height: 70px;
+      margin-right: 1rem;
+    }
+
+    .logo-title h1 {
+      font-size: 1rem;
+      margin: 0;
+      color: var(--gold);
+    }
+
+    nav {
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .hero {
+      background: linear-gradient(to right, var(--navy), var(--gold));
+      color: var(--white);
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .hero a {
+      background: var(--gold);
+      color: var(--navy);
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="logo.jpeg" alt="Logo IES COYOTL" />
+      <h1>INSTITUTO DE ESTUDIOS SUPERIORES COYOTL (IES COYOTL)</h1>
+    </div>
+    <nav>
+      <a href="conocenos.html">Conócenos</a>
+      <a href="oferta.html">Oferta Educativa</a>
+      <a href="perfilegreso.html">Perfil de egresado</a>
+      <a href="perfilingreso.html">Perfil de ingresado</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Bienvenido a IES COYOTL</h2>
+    <a href="oferta.html">Ver Oferta Educativa</a>
+  </section>
+
+  <footer>
+    &copy; 2025 IES COYOTL
+  </footer>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oferta Educativa - IES COYOTL</title>
+  <style>
+    :root {
+      --navy: #002147;
+      --gold: #c4974b;
+      --white: #ffffff;
+      --gray: #f4f4f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom right, #fdfdfd, #e8e8e8);
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      border-bottom: 4px solid var(--gold);
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+
+    .logo-container h1 {
+      font-size: 1.2rem;
+      color: var(--gold);
+      margin: 0;
+    }
+
+    .lobo-img {
+      height: 60px;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .contenedor-cajas {
+      display: grid;
+      gap: 2.5rem;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 768px) {
+      .contenedor-cajas {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .caja {
+      background: var(--white);
+      border-left: 6px solid var(--navy);
+      border-top: 5px solid var(--gold);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .caja:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .caja h2 {
+      color: var(--navy);
+      font-size: 1.5rem;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .caja h2::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--gold);
+      margin-top: 0.5rem;
+      border-radius: 10px;
+    }
+
+    .caja p {
+      margin: 0;
+      text-align: justify;
+      font-size: 1rem;
+    }
+
+    .caja a {
+      color: var(--gold);
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .caja a:hover {
+      color: var(--navy);
+      text-decoration: underline;
+    }
+
+    .volver {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .volver a {
+      background: var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      padding: 0.9rem 2.2rem;
+      border-radius: 10px;
+      font-weight: bold;
+      font-family: 'Segoe UI', sans-serif;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .volver a:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+      margin-top: 5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="logo.jpeg" alt="Logo IES COYOTL" />
+      <h1>INSTITUTO DE ESTUDIOS SUPERIORES COYOTL</h1>
+       <nav>
+      <a href="conocenos.html">Conócenos</a>
+      <a href="oferta.html">Oferta Educativa</a>
+      <a href="perfilegreso.html">Perfil de egresado</a>
+      <a href="perfilingreso.html">Perfil de ingresado</a>
+    </nav>
+    </div>
+    <img src="lobo.jpeg" alt="Lobo" class="lobo-img" />
+  </header>
+
+  <main>
+    <h1>Oferta Educativa</h1>
+    <div class="contenedor-cajas">
+      <div class="caja">
+        <h2><a href="administracion.html">Administración de Empresas</a></h2>
+        <p>La administración de empresas es una disciplina que se enfoca en la gestión eficiente de los recursos de una organización para alcanzar sus objetivos.</p>
+      </div>
+    </div>
+
+    <div class="volver">
+      <a href="index.html">← Volver al inicio</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 INSTITUTO DE ESTUDIOS SUPERIORES COYOTL
+  </footer>
+
+</body>
+</html>
