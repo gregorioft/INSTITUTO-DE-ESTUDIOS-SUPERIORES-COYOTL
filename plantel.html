@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantel - IES COYOTL</title>
+  <style>
+    :root {
+      --navy: #002147;
+      --gold: #c4974b;
+      --white: #ffffff;
+      --gray: #f4f4f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom right, #fdfdfd, #e8e8e8);
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      border-bottom: 4px solid var(--gold);
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+
+    .logo-container h1 {
+      font-size: 1.2rem;
+      color: var(--gold);
+      margin: 0;
+    }
+
+    .lobo-img {
+      height: 60px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .plantel-container {
+      background: var(--white);
+      border-left: 6px solid var(--navy);
+      border-top: 5px solid var(--gold);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .plantel-container h2 {
+      color: var(--navy);
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .plantel-container h2::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      margin: 0.5rem auto 0;
+      border-radius: 10px;
+    }
+
+    .plantel-container img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .plantel-container p {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    .volver {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .volver a {
+      background: var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      padding: 0.9rem 2.2rem;
+      border-radius: 10px;
+      font-weight: bold;
+      font-family: 'Segoe UI', sans-serif;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .volver a:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+      margin-top: 5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="logo.jpeg" alt="Logo IES COYOTL">
+      <h1>INSTITUTO DE ESTUDIOS SUPERIORES COYOTL</h1>
+    </div>
+    <img src="lobo.jpeg" alt="Lobo" class="lobo-img">
+  </header>
+
+  <main>
+    <div class="plantel-container">
+      <h2>Nuestro Plantel</h2>
+      <p>
+        El Instituto de Estudios Superiores Coyotl cuenta con instalaciones modernas y funcionales, diseñadas para brindar una experiencia educativa de calidad. Nuestro plantel ofrece espacios equipados para el aprendizaje, la investigación y el desarrollo integral de nuestros estudiantes.
+      </p>
+      <p>
+        Disponemos de aulas confortables, laboratorios de cómputo, biblioteca, áreas verdes, espacios recreativos y de convivencia. Además, mantenemos nuestras instalaciones seguras y en constante mejora para garantizar un ambiente óptimo de estudio.
+      </p>
+
+      <!-- Imagen del plantel -->
+      <img src="plantel1.jpg" alt="Imagen del plantel IES COYOTL">
+    </div>
+
+    <div class="volver">
+      <a href="index.html">← Volver al Inicio</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 INSTITUTO DE ESTUDIOS SUPERIORES COYOTL
+  </footer>
+
+</body>
+</html>
