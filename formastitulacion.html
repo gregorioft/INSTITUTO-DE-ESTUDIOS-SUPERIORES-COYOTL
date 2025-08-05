@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formas de Titulación - Administración</title>
+  <style>
+    :root {
+      --navy: #002147;
+      --gold: #c4974b;
+      --white: #ffffff;
+      --gray: #f4f4f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom right, #fdfdfd, #e8e8e8);
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      border-bottom: 4px solid var(--gold);
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+
+    .logo-container h1 {
+      font-size: 1.2rem;
+      color: var(--gold);
+      margin: 0;
+    }
+
+    .lobo-img {
+      height: 60px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .content-box {
+      background: var(--white);
+      border-left: 6px solid var(--navy);
+      border-top: 5px solid var(--gold);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--navy);
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .titulation-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      padding-left: 1rem;
+    }
+
+    .titulation-item {
+      background-color: var(--gray);
+      border-left: 6px solid var(--gold);
+      padding: 1rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .titulation-item strong {
+      color: var(--navy);
+    }
+
+    .volver {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .volver a {
+      background: var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      padding: 0.9rem 2.2rem;
+      border-radius: 10px;
+      font-weight: bold;
+      font-family: 'Segoe UI', sans-serif;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .volver a:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+      margin-top: 5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="logo.jpeg" alt="Logo IES COYOTL">
+      <h1>INSTITUTO DE ESTUDIOS SUPERIORES COYOTL</h1>
+    </div>
+    <img src="lobo.jpeg" alt="Lobo" class="lobo-img">
+  </header>
+
+  <main>
+    <div class="content-box">
+      <h2>Formas de Titulación </h2>
+
+      <div class="titulation-list">
+        <div class="titulation-item"><strong>1.</strong> Titulación Ordinaria</div>
+        <div class="titulation-item"><strong>2.</strong> Titulación por cursar una Materia Específica</div>
+        <div class="titulation-item"><strong>3.</strong> Titulación por Proyecto de Fin de Carrera</div>
+        <div class="titulation-item"><strong>4.</strong> Titulación por Tesis</div>
+        <div class="titulation-item"><strong>5.</strong> Titulación por Servicio Social</div>
+        <div class="titulation-item"><strong>6.</strong> Titulación por Prácticas Profesionales</div>
+        <div class="titulation-item"><strong>7.</strong> Titulación por Evaluación de Competencias</div>
+      </div>
+    </div>
+
+    <div class="volver">
+      <a href="index.html">← Volver </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 INSTITUTO DE ESTUDIOS SUPERIORES COYOTL
+  </footer>
+
+</body>
+</html>
