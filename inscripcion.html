@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscripción - IES COYOTL</title>
+  <style>
+    :root {
+      --navy: #002147;
+      --gold: #c4974b;
+      --white: #ffffff;
+      --gray: #f4f4f4;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom right, #fdfdfd, #e8e8e8);
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      border-bottom: 4px solid var(--gold);
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+
+    .logo-container h1 {
+      font-size: 1.2rem;
+      color: var(--gold);
+      margin: 0;
+    }
+
+    .lobo-img {
+      height: 60px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h1 {
+      color: var(--navy);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    ul {
+      background: var(--white);
+      padding: 2rem;
+      border-left: 6px solid var(--navy);
+      border-top: 5px solid var(--gold);
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    ul li::before {
+      content: "✓";
+      color: var(--gold);
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    .volver {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .volver a {
+      background: var(--gold);
+      color: var(--navy);
+      text-decoration: none;
+      padding: 0.9rem 2.2rem;
+      border-radius: 10px;
+      font-weight: bold;
+      font-family: 'Segoe UI', sans-serif;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .volver a:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+      margin-top: 5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="logo.jpeg" alt="Logo IES COYOTL" />
+      <h1>INSTITUTO DE ESTUDIOS SUPERIORES COYOTL</h1>
+    </div>
+    <img src="lobo.jpeg" alt="Lobo" class="lobo-img" />
+  </header>
+
+  <main>
+    <h1>Requisitos para la Inscripción</h1>
+    <ul>
+      <li>Acta de nacimiento.</li>
+      <li>Certificado de estudios de bachillerato.</li>
+      <li>Identificación oficial (INE, pasaporte, etc.).</li>
+      <li>Comprobante de domicilio.</li>
+      <li>Comprobante de pago de inscripción.</li>
+      <li>Fotografías tamaño infantil.</li>
+      <li>Comprobante de pago de colegiatura.</li>
+    </ul>
+
+    <div class="volver">
+      <a href="tramiter.html">← Volver a Trámites</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 INSTITUTO DE ESTUDIOS SUPERIORES COYOTL
+  </footer>
+
+</body>
+</html>
